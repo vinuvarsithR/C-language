@@ -5,7 +5,7 @@ void showbalance(double balance);
 double withdraw(double balance);
 double deposit();
 int main(){
-  double balance = 123;
+  double balance = 0;
   int choice = 0;
   do{
      std::cout<<"*************\n";
@@ -41,17 +41,14 @@ int main(){
   double withdraw(double balance){
     double amount = 0;
     std::cout<<"Enter amount to withdraw\n";
-    if(amount < balance){
-        return balance;
-    }
-    else{
-      std::cout<<"Insufficient funds";
-    }
+    std::cin>>amount;
+    return amount;
     
   }
   double deposit(){
     double amount = 0;
     std::cout<<"Enter amount to deposit";
+    std::cin>>amount;
      if(amount > 0){
         return amount;
      }

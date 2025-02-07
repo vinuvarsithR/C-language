@@ -1,5 +1,5 @@
 import pandas as pd
 
-df = pd.read_csv(r'C:/users/varsi/Downloads/iris')
-
-print(df)
+a=pd.read_csv('C:/Users/varsi/OneDrive/Desktop/iris.csv')
+print(a)
+a.head()

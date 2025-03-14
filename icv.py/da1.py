@@ -1,4 +1,6 @@
 import numpy as np
-Data = [15,21,29,15,24,32,21,15,30]
-x=np.median(Data)
-print(x)
+user_input = input("Enter integers separated by spaces: ").split()
+int_list = list(map(int, user_input))
+int_array = np.array(int_list)
+sortedarray = np.sort(np.unique(int_array))
+print("Sorted Array:", sortedarray)
